@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content%}
+<body class="color member">
+  <h1 class="center1">{{Team.name}}</h1>
+  <p>{{Team.info}}</p>
+  <div>
+    {% for names in Team.members %}
+    <div class="box1"><p>{{names}}</p></div>
+  </div>
+  {% endfor %} {% endblock content%}
+</body>
